@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="nav">
+        <div class="search">
+          <input class="search-bar" type="text" placeholder="Enter city name" />
+          <i class="bi bi-x"></i>
+        </div>
+        <div class="search-icon"><i class="bi bi-search"></i></div>
+      </div>
+      
+      <div class="main">
+        <div class="weather-img">
+          <img src="" alt="Weather Icon" />
+        </div>
+        <div class="temp"></div>
+        <div class="city-name"></div>
+      </div>
+      
+      <div class="weather-details">
+        <div class="detail">
+          <div class="detail-title">Humidity</div>
+          <div class="detail-value humidity"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Wind Speed</div>
+          <div class="detail-value wind-speed"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Feels Like</div>
+          <div class="detail-value feels-like"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Pressure</div>
+          <div class="detail-value pressure"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Visibility</div>
+          <div class="detail-value visibility"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Sunrise</div>
+          <div class="detail-value sunrise"></div>
+        </div>
+        <div class="detail">
+          <div class="detail-title">Sunset</div>
+          <div class="detail-value sunset"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

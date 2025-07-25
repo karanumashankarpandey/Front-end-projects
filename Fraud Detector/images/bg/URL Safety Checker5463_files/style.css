@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url("images/bg/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    /* border:2px solid red;    */
+    margin:100px auto;
+    width:30vw;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vh;
+}
+.top{
+    /* border:2px solid green; */
+    background-color: #0aa07d;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:3vh;
+    width:100%;
+    padding: 3vh 3vh;
+    border-radius:8px;
+    box-shadow:5px 5px 10px 2px gray;
+
+}
+h4{
+    color:rgb(231, 224, 224);
+    font-weight:400;
+}
+.url_area{
+    height:5vh;
+    width:20vw;
+    border-radius:32px;
+    border:none;
+    outline-color:blue;
+    padding-left: 10px;
+}
+.input-area{
+    position:relative;
+
+}
+.bi-search{
+    position:absolute;
+    font-size:1.3rem;
+    right:3%;
+    top:15%;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:2vh;
+}
+button{
+    padding:10px 20px;
+    background-color: #0aa07d;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+.results{
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr; 
+    /* place-items:center; */
+}
+.border{
+    border:1px solid black
+}
+.wraper{
+    /* border:1px solid gray; */
+    position: relative;
+    box-shadow:5px 5px 10px 2px gray;
+    border-radius:8px
+
+
+}
+.result{
+    text-align:center;
+    color:black;
+    font-weight:bold;
+
+}
+.re-text{
+    text-align: center;
+}
+.between{
+    padding:10px 10px;
+    background-color: #f8f7f7;
+
+}
+.right{
+    background-color: rgb(184 1 5);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.left{
+    background-color: #0aa07d;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+.status_bot{
+    display: flex;
+    justify-content:center;
+    width:30%;
+    gap:20%;
+    padding:2% 5%;
+    align-items: center;
+    color:white;
+    border-radius:8px
+}
+.safe{
+    background-color: #0aa07d;
+
+}
+.unsafe{
+    background-color: rgb(184 1 5);
+
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+}
+.status{
+    display: flex;
+    justify-content: space-between  ;
+}

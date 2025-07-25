@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #afafaf;
+}
+
+.color-theme{
+    width:100%;
+    height:20%;
+    text-align:center;
+    align-content:center;
+    /* background-color:#22d3cf; */
+    background-color:#e2c20f;
+    border-radius:8px;
+    font-size:1.4rem;
+    color:rgb(0, 0, 0);
+    font-weight:bolder;
+    font-size:2rem
+}
+#clock-container{
+    width:40vw;
+    height:40vh;
+    margin:30vh auto;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#clock{
+    border-radius:6px;
+    height:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f363f;
+    box-shadow:10px 10px 8px 8px rgb(114, 112, 112)
+}
+#clock-pad{
+    border:2px solid black;
+    border-radius:10px;
+    height:70%;
+    width:85%;
+    background-color: #161c26;
+    color:white;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    position:relative;
+}
+#days{
+    display: flex;
+    justify-content:space-around;
+    color:gray;
+}
+#time-container{
+    font-size:5rem;
+    text-align:center;
+    align-items:center;
+}
+#time{
+    color:rgb(187, 185, 185);
+}
+#abbraviation{
+    font-size:1rem;
+    position:absolute;
+    right:15%;
+    bottom:18%;
+    color:rgb(187, 185, 185);
+}
+@media screen and (max-width:1022px){
+    #clock-container{
+        width:60vw;
+        height:40vh;
+    }
+}
+@media screen and (max-width:588px){
+    #clock-container{
+        width:80vw;
+        height:60vh;
+        margin:10vh auto;
+    }
+}
+@media screen and (max-width:452px){
+    #clock-container{
+        width:100vw;
+        height:60vh;
+    margin:10vh auto;
+    }
+    #time{
+        font-size:3rem;
+    }
+}

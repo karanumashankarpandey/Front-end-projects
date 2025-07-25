@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #0a192f; /* Deep blue-black for a premium dark theme */
+  color: #f8f9fa; /* Light color for better contrast */
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.search-icon {
+  margin-left: 10px;
+  background: #112240; /* Dark navy for elements */
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  color: #64ffda;
+}
+
+.search-icon:hover {
+  background: #233554; /* Lighter hover color */
+  transform: scale(1.1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.wheather-img img {
+  width: 180px;
+  height: auto;
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f8f9fa;
+}
+
+.city-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  background: #112240;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.detail-title {
+  font-size: 1rem;
+  color: #a8c0ff;
+}
+
+.detail-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #64ffda;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .search {
+    width: 80%;
+  }
+  .temp {
+    font-size: 3rem;
+  }
+  .city-name {
+    font-size: 2rem;
+  }
+  .weather-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

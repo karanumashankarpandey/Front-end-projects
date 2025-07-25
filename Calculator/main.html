@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1f1f1f;;
+}
+.calculator{
+    width:300px;
+    height:450px;
+    margin: 200px auto;
+}
+#screen{
+    width:100%;
+    height:70px;
+    outline:none;
+    font-size:30px;
+    padding:5px 20px;
+    background-color: #1f1f1f;
+    border:none;
+    color:white;
+}
+.buttons{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 10px auto;
+    gap:10px
+}
+button{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    border:none;
+    background-color:#000000;
+    color:white;
+    font-size:20px;
+    box-shadow:-5px -5px 20px  rgb(83, 82, 82)
+}
+.operator{
+    color:greenyellow
+}
+.equal{
+    background-color: orange;
+}
+@media screen and (max-width:500px){
+    .calculator{
+        height:80vh;
+    margin: 5vh auto;
+    }
+}
+</style>
+<body>
+    <div class="calculator">
+        <input type="text" id="screen" placeholder="0">
+        <div class="buttons">
+            <div>
+                <button class="button">AC</button>
+                <button class="button">DEL</button>
+                <button class="button operator">%</button>
+                <button class="button operator">/</button>
+            </div>
+            <div>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button operator">*</button>
+            </div>
+            <div>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button operator">-</button>
+            </div>
+            <div>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button operator">+</button>
+            </div>
+            <div>
+                <button class="button"><p>()</p></button>
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+    let buttons=document.querySelectorAll(".button")
+let screen=document.querySelector("#screen")
+var screenText=""
+
+buttons.forEach(button=>{
+   button.addEventListener('click',()=>{
+      let val=button.textContent
+      if(val=="AC"){
+         screenText=""
+         screen.value=screenText
+      }
+      else if(val=="DEL"){
+         screenText=screenText.slice(0,screenText.length-1)
+         screen.value=screenText
+      }
+      else if(val=='='){
+         try{
+            screenText=screen.value=eval(screenText)
+         }
+         catch{
+            screenText='Error'
+            screen.value=screenText
+         }
+      }
+      else{
+         screenText+=val
+         screen.value=screenText
+      }
+   })
+})
+</script>
+</html>

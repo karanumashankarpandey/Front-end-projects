@@ -1,0 +1,3 @@
+#0aa07d  Dark cyan. : input box bg
+rgb(184 1 5) : milisious red colour 
+rgb(9 136 91) : safe green colour

@@ -1,0 +1,3 @@
+document.querySelector('.url_area').addEventListener('click',()=>{
+    document.querySelector('.url_area').style.outlineColor='blue'
+})

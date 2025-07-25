@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/main.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Safety Checker</title>
+    <link rel="stylesheet" href="./URL Safety Checker5463_files/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./URL Safety Checker5463_files/style.css">
+    <link rel="stylesheet" href="./URL Safety Checker5463_files/icons-utility.css">
+<div id="uuidMachine">c75f8a1b-e235-4905-9e22-aa2f370053a6</div></head>
+<body>
+    
+    <div class="card">
+        <div class="top">
+            <div class="input-box">
+                <h4>URL Fraud and Safty Checker</h4>
+                <div class="input-area">
+                    <input class="url_area" type="text" placeholder="Enter URL">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+        </div>
+        <button class="check">Check URL</button>
+
+        <div class="mid">
+            <div class="wraper">
+                <div class="results">
+                    <div class="left ">
+                        <i class="bi bi-shield-check s1"></i></div>
+                    <div class="between">
+                        <h4 class="result">Result</h4>
+                       we have checked the whole link the link you give is partialy save you go through it thank you entaring our webpage<p></p>
+                    </div>
+                    <div class="right ">
+                        <i class="bi bi-shield-check s2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="status">
+                <div class="safe status_bot">
+                    <div class="safe-left">
+                        <i class="bi bi-shield"></i>
+                    </div>
+                    <div class="safe-mid">Safe</div>
+                    <div class="safe right">
+                        <i class="bi bi-lock"></i>
+                    </div>
+                </div>
+                <div class="unsafe status_bot">
+                    <div class="unsafe-left">
+                        <i class="bi bi-shield"></i>
+                    </div>
+                    <div class="unsafe-mid">UnSafe</div>
+                    <div class="unsafe right">
+                        <i class="bi bi-unlock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script src="./URL Safety Checker5463_files/script.js.download"></script>
+
+
+</body></html>

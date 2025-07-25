@@ -1,0 +1,89 @@
+:root{
+    --normal-width:60%;
+    --clicked-width:80%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(34, 33, 33);
+}
+h2{
+    color:rgb(201, 197, 197);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.grandparent{
+    width:100%;
+    text-align: center;
+}
+.page{
+    margin:20vh auto;
+    width:400px;
+    height:400px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    gap:7%;
+    background-color: black;
+    transition:all 3s linear infinite;
+    box-shadow:0 0 10px 10px aqua;
+}
+.email-box-cover input{
+    height:4.5vh;
+    width:var(--normal-width);
+}
+.passward-box-cover input{
+    height:4.5vh;
+    width:var(--normal-width);
+}
+.login-button-cover button{
+    height:4.5vh;
+    width:50%;
+    border-radius:30px;
+    border:2px solid orange;
+    font-size:1rem;
+    color:white;
+    background-color: black;
+}
+.login-button-cover button:hover{
+   background-color: orange;
+}
+input{
+    border-radius:30px;
+    outline:none;
+    border:2px solid rgb(248, 29, 29);
+    background-color: black;
+    color:white;
+    text-align: center;   /*! we can use text-ailgn center for good locking text inside input field (SOMETHING NEW) */
+    transition:all 3s linear infinite;
+}
+
+.input-main-box{
+    position: relative;
+}
+.bi-eye-slash{
+    color:white;
+    position:absolute;
+    top:25%;
+    right:25%;
+    font-size:1.2rem
+} 
+.bi-eye{
+    color:white;
+    position:absolute;
+    top:25%;
+    right:25%;
+    font-size:1.2rem
+}
+@media screen and (max-width:600px){
+    .page{
+        width:300px;
+        height:300px;
+    }
+    .bi-eye-slash,.bi-eye{
+        top:18%;
+    }
+}
